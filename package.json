@@ -1,0 +1,30 @@
+{
+  "name": "babel-plugin-cli",
+  "version": "0.0.0",
+  "description": "CLI tool for building Babel Plugins.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --copy-files --ignore src/templates/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "generator"
+  ],
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-helper-fixtures": "^6.3.13",
+    "parse-author": "^0.2.0",
+    "path-exists": "^2.0.0",
+    "run-series": "^1.1.4"
+  },
+  "bin": {
+    "babel-plugin": "./bin/babel-plugin.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.1.2",
+    "babel-preset-es2015": "^6.1.2"
+  }
+}
